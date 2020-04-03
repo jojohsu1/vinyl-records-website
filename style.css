@@ -607,6 +607,10 @@
             position: relative;
         }
         
+        .grid_item a {
+            text-decoration: none;
+        }
+        
         .banner_img1 {
             position: relative;
             background: url("images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg");

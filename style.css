@@ -1063,11 +1063,10 @@
         }
         
         .event_content {
-            width: 1012px;
             height: 0;
             background-color: rgba(6, 3, 3, .8);
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             overflow: hidden;
         }
@@ -1079,18 +1078,18 @@
         .event-pic {
             width: 230px;
             height: 230px;
-            background-color: rgba(47, 67, 13, .9);
+            background-color: rgba(6, 3, 3, .8);
             overflow: hidden;
         }
         
         .event-pic img {
-            width: 280px;
+            width: 250px;
             height: auto;
             background-size: cover;
         }
         
         .pic-big img {
-            width: 502px;
+            width: 520px;
             height: auto;
             background-size: cover;
         }
@@ -1164,6 +1163,18 @@
             display: none;
         }
         
+        @media only screen and (max-width:1024px) {
+            .event_content {
+                justify-content: center;
+            }
+            .event-pic {
+                display: none;
+            }
+            .pic-big {
+                display: block;
+            }
+        }
+        
         @media only screen and (max-width:768px) {
             .sixitem_container {
                 grid-template-columns: repeat(1, auto);
@@ -1197,6 +1208,9 @@
             .event-money {
                 width: 100%;
                 padding: 0 0 0 1.5rem;
+            }
+            .event-pic img {
+                display: none;
             }
             .event_btn {
                 display: none;

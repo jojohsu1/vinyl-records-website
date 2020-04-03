@@ -1163,7 +1163,16 @@
             display: none;
         }
         
+        @media only screen and (max-width:1500px) {
+            .sixitem_container {
+                grid-template-columns: repeat(2, auto);
+            }
+        }
+        
         @media only screen and (max-width:1024px) {
+            .sixitem_container {
+                grid-template-columns: repeat(1, auto);
+            }
             .event_content {
                 justify-content: center;
             }

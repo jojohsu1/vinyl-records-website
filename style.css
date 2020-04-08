@@ -1157,10 +1157,6 @@
             background-color: #fff;
         }
         
-        .month .month_hold:hover {
-            cursor: progress;
-        }
-        
         .June {
             display: none;
         }

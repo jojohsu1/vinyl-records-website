@@ -586,6 +586,7 @@
             color: var(--font-yellow);
             border: 1px solid var(--dark-gray);
             background-color: var(--dark-gray);
+            cursor: pointer;
         }
         /* index */
         
@@ -990,7 +991,7 @@
         }
         
         .event_item {
-            width: 80%;
+            width: 1107px;
             color: var(--font-yellow);
             background-color: var(--dark-gray);
             padding: 1.5rem 0;
@@ -1085,7 +1086,7 @@
         }
         
         .event-pic img {
-            width: 250px;
+            width: 280px;
             height: auto;
             background-size: cover;
         }
@@ -1165,11 +1166,17 @@
             .sixitem_container {
                 grid-template-columns: repeat(2, auto);
             }
+            .event_item {
+                width: 860px;
+            }
         }
         
         @media only screen and (max-width:1024px) {
             .sixitem_container {
                 grid-template-columns: repeat(1, auto);
+            }
+            .event_item {
+                width: 680px;
             }
             .event_content {
                 justify-content: center;
@@ -1216,10 +1223,19 @@
                 width: 100%;
                 padding: 0 0 0 1.5rem;
             }
-            .event-pic img {
-                display: none;
+            .pic-big {
+                display: block;
             }
-            .event_btn {
+        }
+        
+        @media only screen and (max-width:520px) {
+            .event_item {
+                width: 100%;
+            }
+            .book_icon {
+                padding: 2rem 0 0 1.5rem;
+            }
+            .event_icon {
                 display: none;
             }
         }

@@ -50,7 +50,7 @@ const Newinfo = (_ => {
                     <div class="new_item_details">
                         <span class="new_performer performer">${obj.artist}</span>
                         <span class="new_title title">${obj.title}</span>
-                        <button class="btn btn-more">more</button>
+                        <button class="btn btn-more" onclick="self.location.href='./albums/${obj.link}'" type="button">more</button>
                     </div>
                 </div>
             </div>

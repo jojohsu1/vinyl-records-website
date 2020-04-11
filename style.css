@@ -1,18 +1,22 @@
         @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Simonetta|Trade+Winds&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
         @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
          :root {
             --light-red: rgb(146, 34, 0);
             --dark-green: #013000;
             --light-green: #2F430D;
+            --wish-red: rgba(172, 80, 80, 0.3);
             --brown: #2D1801;
             --dark-gray: rgb(6, 3, 3);
             --font-yellow: rgb(216, 136, 50);
+            --bg-gray: #F2F2F2;
             --font-gray: rgb(160, 160, 160);
             --font-heading-stack: Trade Winds, sans-serif;
             --font-body-stack: Roboto, sans-serif;
             --font-price: Roboto Slab, sans-serif;
             --font-button-stack: Space Mono, monospace;
+            --font-album-title: Abril Fatface, cursive;
         }
         
         * {
@@ -28,6 +32,111 @@
         .container {
             display: flex;
             flex-direction: column;
+        }
+        
+        .addedToCart {
+            position: fixed;
+            top: 40%;
+        }
+        
+        .animation_icons {
+            position: relative;
+            width: 280px;
+            height: 30px;
+            background-color: var(--dark-gray);
+            margin: 10rem 0 0 7rem;
+            animation: disappearing 2s linear 1 500ms;
+            opacity: 0;
+        }
+        
+        .added {
+            font-family: Space Mono, monospace;
+            font-size: 1.1rem;
+            color: var(--font-yellow);
+            line-height: 30px;
+            text-align: center;
+            padding: 0 1rem;
+            opacity: 0;
+            animation: disappearing 2s linear 1 500ms;
+        }
+        
+        .fa-compact-disc {
+            position: absolute;
+            color: #000;
+            top: -100px;
+            left: 90px;
+            animation: spin 1.7s linear 1 500ms;
+            opacity: 0;
+        }
+        
+        .fa-shopping-cart {
+            position: absolute;
+            color: rgb(216, 136, 50);
+            top: -48px;
+            left: -55px;
+            animation: shopping 1.9s linear 1 500ms;
+            opacity: 0;
+        }
+        
+        @keyframes spin {
+            0% {
+                top: -100px;
+                left: 90px;
+                transform: rotate(360deg);
+                opacity: 1;
+            }
+            40% {
+                top: -55px;
+                left: 90px;
+                transform: rotate(2deg);
+                opacity: 1;
+            }
+            60% {
+                top: -55px;
+                left: 120px;
+                opacity: 1;
+                transform: rotate(1deg);
+            }
+            100% {
+                top: -55px;
+                left: 200px;
+                opacity: 1;
+                transform: rotate(0deg);
+            }
+        }
+        
+        @keyframes shopping {
+            0% {
+                left: 0;
+                opacity: 1;
+            }
+            40% {
+                left: 80px;
+                opacity: 1;
+            }
+            60% {
+                left: 120px;
+                opacity: 1;
+            }
+            100% {
+                left: 200px;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes disappearing {
+            0% {
+                opacity: 1;
+            }
+            40% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
         }
         
         .main-header {
@@ -483,7 +592,7 @@
         
         .footer-nav ul {
             display: grid;
-            grid-template-columns: repeat(4, auto);
+            grid-template-columns: repeat(5, auto);
             grid-gap: 12px;
             justify-content: center;
             align-content: center;
@@ -1331,4 +1440,236 @@
             border: 1px solid var(--font-yellow);
             box-shadow: 0 0 .5rem rgba(216, 136, 50, 1), 0 0 1rem rgba(216, 136, 50, .5);
             cursor: pointer;
+        }
+        /* album */
+        
+        .albums {}
+        
+        .album_items {}
+        
+        .album_item {
+            background-color: var(--bg-gray);
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        
+        .album_img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        
+        .album {
+            width: 500px;
+            height: 500px;
+            padding: 0 2rem;
+            position: relative;
+        }
+        
+        .album_item_details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .album_title {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        
+        .categories {
+            padding: 0 0 1rem 0;
+        }
+        
+        .album_performer {
+            padding: 0 0 1rem 0;
+            border-bottom: 2px solid rgba(160, 160, 160, .6);
+        }
+        
+        .album_price {
+            padding: 1rem 0;
+        }
+        
+        .wishlist-add {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        
+        .fa-heart {
+            color: var(--wish-red);
+            padding: .8rem 2rem .8rem 0;
+        }
+        
+        .fa-heart:hover {
+            color: var(--light-red);
+        }
+        
+        .album__features {
+            width: 1012px;
+            margin: 1rem auto;
+            background-color: rgba(216, 136, 50, .5);
+            padding: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .album_description {
+            width: 460px;
+        }
+        
+        .description_title,
+        .tracklist_title {
+            font-family: var(--font-album-title);
+            font-size: 1.3rem;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid rgba(6, 3, 3, .8);
+        }
+        
+        .description_text {
+            font-family: var(--font-body-stack);
+            font-size: 1.05rem;
+            line-height: 1.6rem;
+            padding: 2rem;
+        }
+        
+        .blog_introduction {
+            width: 350px;
+            font-family: var(--font-button-stack);
+            color: #fff;
+            background-color: var(--brown);
+            padding: 2rem;
+        }
+        
+        .blog_text {
+            padding: 0 0 1rem 0;
+            border-bottom: 1px solid rgba(216, 136, 50, .5);
+        }
+        
+        .blog_author {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 1rem 0 0 0;
+        }
+        
+        .blog_author img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .blog_people {
+            padding: 0 0 0 1rem;
+            align-self: flex-end;
+        }
+        
+        .author_name {
+            font-family: var(--font-price);
+            color: #fff;
+            font-size: .8rem;
+            text-shadow: var(--bg-gray);
+            line-height: 1.4rem;
+        }
+        
+        .author_profession {
+            font-family: var(--font-body-stack);
+            color: #fff;
+            font-size: .8rem;
+        }
+        
+        .album_content {
+            font-family: var(--font-body-stack);
+            padding: 2rem;
+        }
+        
+        .album_information {
+            width: 1012px;
+            margin: 1rem auto;
+            background-color: var(--bg-gray);
+            padding: 2rem;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .record_side {
+            font-weight: bolder;
+            padding: .5rem 1.5rem;
+            background-color: var(--font-gray);
+        }
+        
+        .record_tune {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .record_num {
+            padding-right: .5rem;
+        }
+        
+        .record_italic {
+            font-style: italic;
+        }
+        
+        .record_time {
+            margin-left: auto;
+        }
+        
+        .album_format {
+            width: 350px;
+        }
+        
+        .format_style {
+            padding: 2rem 2rem .3rem 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .format_title {
+            font-family: var(--font-body-stack);
+            font-weight: bolder;
+        }
+        
+        .format_content {
+            font-family: var(--font-body-stack);
+        }
+        
+        @media only screen and (max-width:1000px) {
+            .album__items {
+                grid-template-columns: repeat(1, auto);
+            }
+            .album__features {
+                width: 90%;
+                justify-content: center;
+                align-content: center;
+            }
+            .album_information {
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+            .album_format {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width:768px) {
+            .album__features {
+                width: 90%;
+                flex-direction: column;
+            }
+            .album_description {
+                width: 100%;
+            }
+            .blog_introduction {
+                width: 100%;
+            }
         }

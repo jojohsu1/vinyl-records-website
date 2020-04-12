@@ -1441,11 +1441,7 @@
             box-shadow: 0 0 .5rem rgba(216, 136, 50, 1), 0 0 1rem rgba(216, 136, 50, .5);
             cursor: pointer;
         }
-        /* album */
-        
-        .albums {}
-        
-        .album_items {}
+        /* albums */
         
         .album_item {
             background-color: var(--bg-gray);
@@ -1491,6 +1487,32 @@
         
         .album_price {
             padding: 1rem 0;
+        }
+        
+        .section_btns {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            bottom: 0;
+        }
+        
+        .section_btn {
+            display: none;
+            color: rgb(216, 136, 50);
+            font-size: 1.2rem;
+            font-family: var(--font-album-title);
+            background-color: #fff;
+            outline: none;
+            border: 1px solid rgb(216, 136, 50);
+            width: 120px;
+            padding: .3rem 0;
+            margin: 0 .3rem 0 0;
+        }
+        
+        .section_btn:hover {
+            border: 1px solid var(--dark-gray);
+            background-color: var(--dark-gray);
+            cursor: pointer;
         }
         
         .wishlist-add {
@@ -1596,6 +1618,7 @@
             padding: 2rem;
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
         
         .record_side {
@@ -1619,6 +1642,8 @@
         
         .record_time {
             margin-left: auto;
+            color: var(--brown);
+            padding-left: .5rem;
         }
         
         .album_format {
@@ -1666,10 +1691,22 @@
                 width: 90%;
                 flex-direction: column;
             }
+            .section_btn {
+                display: block;
+            }
             .album_description {
                 width: 100%;
             }
             .blog_introduction {
                 width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width:768px) {
+            .album {
+                padding: 0 3rem;
+            }
+            .fa-heart {
+                padding: .8rem 3rem .8rem 0;
             }
         }

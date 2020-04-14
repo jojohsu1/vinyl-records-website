@@ -5,6 +5,11 @@ const ShopCart = (_ => {
     const recordAddButtons = document.getElementsByClassName('records-add')
     const cartRows = document.getElementsByClassName('cart-items')[0]
     const quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    const addedToCartElem = document.querySelector('.addedToCart')
+    const animationIconsElem = document.querySelector('.animation_icons')
+    const addedElem = document.querySelector('.added')
+    const discElem = document.querySelector('.fa-compact-disc')
+    const cartElem = document.querySelector('.fa-shopping-cart')
 
     const quantityChanged = event => {
         let input = event.target
@@ -20,16 +25,35 @@ const ShopCart = (_ => {
         updateTotalPrice()
     }
 
+    const addedCartAnimation = _ => {
+        animationIconsElem.classList.add('animation_icons-active')
+        addedElem.classList.add('added-active')
+        discElem.classList.add('fa-compact-disc-active')
+        cartElem.classList.add('fa-shopping-cart-active')
+    }
+
+    const removeCartAnimation = _ => {
+        animationIconsElem.classList.remove('animation_icons-active')
+        addedElem.classList.remove('added-active')
+        discElem.classList.remove('fa-compact-disc-active')
+        cartElem.classList.remove('fa-shopping-cart-active')
+    }
+
     const renderCartItem = (performer, title, price) => {
         let cartItem = document.createElement('div')
         cartItem.classList.add('cart-item')
+
         let cartPerformer = cartRows.getElementsByClassName('cart-performer')
         let cartTitleName = cartRows.getElementsByClassName('cart-titlename')
+        removeCartAnimation()
         for (let i = 0, j = 0; i < cartPerformer.length, j < cartTitleName.length; i++, j++) {
             if (cartPerformer[i].innerText == performer && cartTitleName[i].innerText == title) {
                 return
+            } else {
+                addedCartAnimation()
             }
         }
+
         let cartItemContent = ''
         cartItemContent = `
         <div class="cart-title">
@@ -48,6 +72,7 @@ const ShopCart = (_ => {
         cartItem.getElementsByClassName('cart-quantiyi-input')[0].addEventListener('change', quantityChanged)
     }
 
+
     const addItemToCart = event => {
         let btn = event.target
         let item = btn.parentElement.parentElement
@@ -56,10 +81,10 @@ const ShopCart = (_ => {
         let recordPrice = item.getElementsByClassName('records-price')[0].innerText
         renderCartItem(recordPerformer, recordTitle, recordPrice)
         updateTotalPrice()
+        addedCartAnimation()
     }
 
     const updateTotalPrice = _ => {
-
         let total = 0
         for (let i = 0; i < cartItems.length; i++) {
             let cartItem = cartItems[i]

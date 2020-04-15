@@ -4,6 +4,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
          :root {
             --light-red: rgb(146, 34, 0);
+            --light-blue: rgb(46, 0, 146);
             --dark-green: #013000;
             --light-green: #2F430D;
             --wish-red: rgba(172, 80, 80, 0.3);
@@ -1468,6 +1469,15 @@
             transform: translateX(-50%) translateY(-50%);
         }
         
+        .popular_icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2rem;
+            height: auto;
+            margin: 1.2rem;
+        }
+        
         .albums_pic {
             width: 200px;
             height: 200px;
@@ -1544,13 +1554,52 @@
             background-color: transparent;
         }
         
+        .album-preview {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        
+        .gift-free {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        
+        .fa-gift {
+            font-size: 24px;
+            color: rgba(46, 0, 146, .3);
+            padding: .8rem 2rem .8rem 0;
+        }
+        
+        .fa-music {
+            font-size: 23px;
+            color: rgba(47, 67, 13, .3);
+            padding: .8rem 2rem .8rem 0;
+        }
+        
         .fa-heart {
+            font-size: 23px;
             color: var(--wish-red);
             padding: .8rem 2rem .8rem 0;
         }
         
         .fa-heart:hover {
             color: var(--light-red);
+        }
+        
+        .fa-music:hover {
+            color: var(--light-green);
+        }
+        
+        .fa-gift:hover {
+            color: var(--light-blue);
         }
         
         .album__features {
@@ -1792,6 +1841,59 @@
             font-style: italic;
             font-size: .8rem;
             color: var(--light-red);
+        }
+        
+        .musical_instrument_icon {
+            position: relative;
+            width: 45px;
+            height: 45px;
+            overflow: hidden;
+            background-color: rgba(242, 242, 242, .5);
+        }
+        
+        .piano_icon {
+            position: absolute;
+            height: 26px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            transform: translate(2px, 10px);
+        }
+        
+        .violin_icon {
+            position: absolute;
+            height: 57px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            transform: translate(4px, 4px);
+        }
+        
+        .command_icon {
+            position: absolute;
+            height: 62px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            transform: translate(-6px, -8px);
+        }
+        
+        .pop_icon {
+            position: absolute;
+            height: 80px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            transform: translate(-18px, -3px);
+        }
+        
+        .jazz_icon {
+            position: absolute;
+            height: 90px;
+            width: auto;
+            background-size: cover;
+            background-position: center;
+            transform: translate(-27px, -11px);
         }
         
         @media only screen and (max-width:1024px) {

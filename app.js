@@ -1,3 +1,7 @@
-import shopCart from './store.js/index.js'
+import ShopCart from './modules/store.js';
+import Newinfo from './modules/newinfo.js';
+import SetCountdown from './modules/event.js';
 
-shopCart.init()
+ShopCart.init()
+Newinfo.init()
+SetCountdown.init()

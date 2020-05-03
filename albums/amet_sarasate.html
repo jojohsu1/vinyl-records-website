@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="../style.css">
-    <title>Amet consectetur | ablo De Sarasate: Zigeunerweisen</title>
+    <title>Amet consectetur | Pablo De Sarasate: Zigeunerweisen</title>
 </head>
 
 <body>
     <div class="container">
         <!--main nav-->
         <header class="main-header section_display">
-            <nav class="nav main_nav section_distance">
-                <ul>
+            <nav id="main_nav_panel" class="nav main_nav section_distance">
+                <ul class="navbar_panel">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../new.html">New</a></li>
                     <li><a href="../album.html">Albums</a></li>
@@ -23,6 +23,9 @@
                     <li><a href="../login.html">Sign In</a></li>
                 </ul>
             </nav>
+            <div class="bars_icon">
+                <i class="fas fa-bars"></i>
+            </div>
             <h1 class="header-title section_distance">
                 Vinyl Records
             </h1>
@@ -31,7 +34,7 @@
         <div class="section_breadcrumbs">
             <nav class="breadcrumbs_nav">
                 <ul>
-                    <li><a href="../album.html" class="nav_items">Albums</a>&nbsp;\&nbsp;<a href="#">Amet consectetur - ablo De Sarasate: Zigeunerweisen5</a></li>
+                    <li><a href="../album.html" class="nav_items">Albums</a>&nbsp;\&nbsp;<a href="#">Amet consectetur - Pablo De Sarasate: Zigeunerweisen</a></li>
                 </ul>
             </nav>
         </div>
@@ -105,121 +108,134 @@
             <div class="albums">
                 <div class="album__items grid_container">
                     <div class="album_item">
-                        <img src="../images/alireza-nazari-a8lSSWjK7PQ-unsplash.jpg" class="item_img album_img">
+                        <div class="album_bigpic">
+                            <img src="../images/alireza-nazari-a8lSSWjK7PQ-unsplash.jpg" class="item_img album_img">
+                        </div>
                     </div>
-                    <div class="album album_item_details ">
-                        <div class="btn-icons ">
-                            <button class="btn wishlist-add btn-love " onclick="self.location.href='../login.html' " type="button " data-tooltips="add to wishlist "><i class="fas fa-heart "></i></button>
+                    <div class="album album_item_details">
+                        <div class="btn-icons">
+                            <button class="btn wishlist-add btn-love" onclick="self.location.href='../login.html'" type="button" data-tooltips="add to wishlist"><i class="fas fa-heart"></i></button>
                         </div>
                         <div class="musical_instrument_icon">
-                            <img src="../images/icon/violin.svg " alt="violin " class="violin_icon ">
+                            <img src="../images/icon/violin.svg" alt="violin" class="violin_icon">
                         </div>
-                        <span class="categories section-title ">strings</span>
-                        <span class="album_title title ">Pablo De Sarasate: Zigeunerweisen</span>
-                        <span class="album_performer performer ">Amet consectetur</span>
-                        <span class="album_price records-price ">NT$ 1200</span>
+                        <span class="categories section-title">strings</span>
+                        <span class="album_title title">Pablo De Sarasate: Zigeunerweisen</span>
+                        <span class="album_performer performer">Amet consectetur</span>
+                        <span class="album_price records-price">NT$ 1200</span>
+                        <button class="btn records-add-width">add to cart</button>
                         <div class="section_btns">
-                            <button class="btn section_btn tracklist_section " onclick="self.location.href='#tracklist' " type="button ">Tracklist</button>
-                            <button class="btn section_btn details_section " onclick="self.location.href='#details' " type="button ">Details</button>
+                            <button class="btn section_btn tracklist_section" onclick="self.location.href='#tracklist'" type="button">Tracklist</button>
+                            <button class="btn section_btn details_section" onclick="self.location.href='#details'" type="button">Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="album__features ">
-                    <div class="album_description ">
-                        <div class="description_title ">Description</div>
-                        <div class="description_text ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro ad ipsa consectetur doloribus hic magni quos eum aut omnis commodi voluptatem voluptates fugiat dolorum, animi repellat pariatur minima non possimus, obcaecati
+                <div class="album__features">
+                    <div class="album_description">
+                        <div class="description_title">Description</div>
+                        <div class="description_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro ad ipsa consectetur doloribus hic magni quos eum aut omnis commodi voluptatem voluptates fugiat dolorum, animi repellat pariatur minima non possimus, obcaecati
                             officia ut! Reiciendis, animi cumque recusandae laborum ullam doloremque perspiciatis officia, sunt rerum possimus atque vero explicabo magnam!</div>
                     </div>
-                    <div class="blog_introduction ">
-                        <div class="blog_text ">Quos rerum eum reprehenderit at error, porro repudiandae sequi maxime minima neque dignissimos illo iusto, asperiores officia nam? <br>Ab rerum debitis quisquam.</div>
-                        <div class="blog_author ">
-                            <img src="../images/photo-of-person-holding-dj-controller-1493004.jpg " alt="William Wright ">
-                            <div class="blog_people ">
-                                <p class="author_name ">William Wright</p>
-                                <p class="author_profession ">Music Producer</p>
+                    <div class="blog_introduction">
+                        <div class="blog_text">Quos rerum eum reprehenderit at error, porro repudiandae sequi maxime minima neque dignissimos illo iusto, asperiores officia nam? <br>Ab rerum debitis quisquam.</div>
+                        <div class="blog_author">
+                            <img src="../images/photo-of-person-holding-dj-controller-1493004.jpg" alt="William Wright">
+                            <div class="blog_people">
+                                <p class="author_name">William Wright</p>
+                                <p class="author_profession">Music Producer</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="album_information ">
-                    <div class="album_tracklist ">
-                        <div id="tracklist " class="tracklist_title ">Tracklist</div>
-                        <div class="album_content ">
-                            <div class="record_side ">LP 1</div><br>
-                            <div class="record_italic ">Side A</div>
-                            <span class="record_tune "><span class="record_num ">1.</span>Meditation(Thais) Composed By – Jules Massenet<span class="record_time ">4:47</span></span><br>
-                            <span class="record_tune "><span class="record_num ">2.</span>Zigeunerweisen, Op.20 Composed By – Pablo de Sarasate<span class="record_time ">8:36</span></span><br>
-                            <span class="record_tune "><span class="record_num ">3.</span>Vocalise, Op.34 no.14 Composed By – Sergei Vasilyevich Rachmaninoff<span class="record_time ">5:49</span></span><br>
-                            <span class="record_tune "><span class="record_num ">4.</span>Meditation, Op.32 Composed By – Alexander Glazunov<span class="record_time ">3:43</span></span><br>
-                            <div class="record_italic ">Side B</div>
-                            <span class="record_tune "><span class="record_num ">1.</span>Fantasy on Russian Themes (after Rimsky-Korsakov) Composed By – Fritz Kreisler<span class="record_time ">8:35</span></span><br>
-                            <span class="record_tune "><span class="record_num ">2.</span>Scherzo in C Minor, Op.42 no.2 (orch. Glazunov) Composed By – Pyotr Ilyich Tchaikovsky<span class="record_time ">3:55</span></span><br>
-                            <span class="record_tune "><span class="record_num ">3.</span>Legende, Op.17 Composed By – Henryk Wieniawski<span class="record_time ">7:45</span></span><br>
-                            <span class="record_tune "><span class="record_num ">4.</span>The Old Refrain Composed By – Fritz Kreisler<span class="record_time ">3:26</span></span><br>
-                            <span class="record_tune "><span class="record_num ">5.</span>Schon Rosmarin Composed By – Fritz Kreisler<span class="record_time ">1:55</span></span><br>
+                <div class="album_information">
+                    <div class="album_tracklist">
+                        <div id="tracklist" class="tracklist_title">Tracklist</div>
+                        <div class="album_content">
+                            <div class="record_side">LP 1</div><br>
+                            <div class="record_content">Jean Sibelius</div><br>
+                            <span class="record_tune"><span class="record_num">1.</span>Finlandia, Op.26 (1899)<span class="record_time">8:28</span></span><br>
+                            <div class="record_content">Karelia Suite, Op.11 (1893)</div>
+                            <div class="record_italic">(Version using original scoring)</div><br>
+                            <span class="record_tune"><span class="record_num">2.</span>I. Intermezzo<span class="record_time">3:46</span></span><br>
+                            <span class="record_tune"><span class="record_num">3.</span>II. Ballade. Dansen i rosenlund<span class="record_time">9:08</span></span><br>
+                            <span class="record_tune"><span class="record_num">4.</span>III. Alla marcia<span class="record_time">4:08</span></span><br>
+                            <div class="record_content">Concerto in D minor for Violin and Orchestra,Op.47</div>
+                            <div class="record_italic">(1903/04, rev. 1905)</div><br>
+                            <span class="record_tune"><span class="record_num">5.</span>I. Allegro moderato<span class="record_time">16:47</span></span><br>
+                            <span class="record_tune"><span class="record_num">6.</span>II. Adagio di molto<span class="record_time">10:02</span></span><br>
+                            <span class="record_tune"><span class="record_num">7.</span>III. Allegro, ma non tanto<span class="record_time">7:40</span></span><br>
+                            <span class="record_tune"><span class="record_num">8.</span>The Oceanides, Op.73 (1914), Tone Poem for Large Orchestra<span class="record_time">10:03</span></span><br>
+                            <span class="record_tune"><span class="record_num">9.</span>Valse Triste, Op.44 No.1 (1903, rev.1904)<span class="record_time">4:42</span></span><br>
+                            <div class="record_side">LP 2</div><br>
+                            <span class="record_tune"><span class="record_num">1.</span>Andante festivo, JS 34b (1922, rev.1938) for strings and timpani<span class="record_time">5:10</span></span><br>
+                            <span class="record_tune"><span class="record_num">2.</span>En saga, Op.9 (1892, rev.1902). Tone Poem for Large Orchestra<span class="record_time">18:03</span></span><br>
+                            <span class="record_tune"><span class="record_num">3.</span>Pohjolas´s Daughter, Op.49 (1906). Symphonic Fantasia<span class="record_time">13:10</span></span><br>
+                            <span class="record_tune"><span class="record_num">4.</span>The Wood-Nymph, Op.15 (1894/95). Ballade pour orchestre<span class="record_time">21:36</span></span><br>
+                            <span class="record_tune"><span class="record_num">5.</span>Tapiola, Op.112 (1926). Symphonic Poem for Orchestra<span class="record_time">17:22</span></span><br>
+                            <span class="record_tune"><span class="record_num">6.</span>Porilaisten Marssi, JS 152 (arr.1900)<span class="record_time">2:14</span></span>
                         </div>
                     </div>
-                    <div class="album_format ">
-                        <div id="details " class="tracklist_title ">Details</div>
-                        <div class="format_style ">
-                            <span class="format_title ">Duration</span>
-                            <span class="format_content ">LP</span>
+                    <div class="album_format">
+                        <div id="details" class="tracklist_title">Details</div>
+                        <div class="format_style">
+                            <span class="format_title">Duration</span>
+                            <span class="format_content">Double LP</span>
                         </div>
-                        <div class="format_style ">
-                            <span class="format_title ">Release Year</span>
-                            <span class="format_content ">2015</span>
+                        <div class="format_style">
+                            <span class="format_title">Release Year</span>
+                            <span class="format_content">2000</span>
                         </div>
-                        <div class="format_style ">
-                            <span class="format_title ">Speed</span>
-                            <span class="format_content ">33RPM</span>
+                        <div class="format_style">
+                            <span class="format_title">Speed</span>
+                            <span class="format_content">33RPM</span>
                         </div>
-                        <div class="format_style ">
-                            <span class="format_title ">Record Size</span>
-                            <span class="format_content ">12 inch</span>
+                        <div class="format_style">
+                            <span class="format_title">Record Size</span>
+                            <span class="format_content">12 inch</span>
                         </div>
-                        <div class="format_style ">
-                            <span class="format_title ">Weight</span>
-                            <span class="format_content ">180 gram</span>
+                        <div class="format_style">
+                            <span class="format_title">Weight</span>
+                            <span class="format_content">200 gram</span>
                         </div>
-                        <div class="format_style ">
-                            <span class="format_title ">Label</span>
-                            <span class="format_content ">Warner Classics</span>
+                        <div class="format_style">
+                            <span class="format_title">Manufacturer</span>
+                            <span class="format_content">Analogue Productions</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button id="topbtn "><i class="fas fa-angle-up fa-lg "></i></button>
-        <footer class="main-footer ">
-            <div class="main-footer-container ">
-                <h1 class="footer-title ">Vinyl Records</h1>
-                <nav class="nav footer-nav ">
+        <button id="topbtn"><i class="fas fa-angle-up fa-lg"></i></button>
+        <footer class="main-footer">
+            <div class="main-footer-container">
+                <h1 class="footer-title">Vinyl Records</h1>
+                <nav class="nav footer-nav">
                     <ul>
-                        <li class="footer-parts ">
-                            <a href="https://www.youtube.com " target="blank ">
-                                <i class="fab fa-youtube fa-lg "></i></a>
+                        <li class="footer-parts">
+                            <a href="https://www.youtube.com" target="blank">
+                                <i class="fab fa-youtube fa-lg"></i></a>
                         </li>
-                        <li class="footer-parts ">
-                            <a href="https://www.facebook.com " target="blank ">
-                                <i class="fab fa-facebook-f fa-lg "></i></a>
+                        <li class="footer-parts">
+                            <a href="https://www.facebook.com" target="blank">
+                                <i class="fab fa-facebook-f fa-lg"></i></a>
                         </li>
-                        <li class="footer-parts ">
-                            <a href="https://www.instagram.com " target="blank ">
-                                <i class="fab fa-instagram fa-lg "></i></a>
+                        <li class="footer-parts">
+                            <a href="https://www.instagram.com" target="blank">
+                                <i class="fab fa-instagram fa-lg"></i></a>
                         </li>
-                        <li class="footer-parts ">
-                            <a href="https://www.pinterest.com " target="blank ">
-                                <i class="fab fa-pinterest-p fa-lg "></i></a>
+                        <li class="footer-parts">
+                            <a href="https://www.pinterest.com" target="blank">
+                                <i class="fab fa-pinterest-p fa-lg"></i></a>
                         </li>
-                        <li class="footer-parts ">
-                            <a href="https://www.spotify.com/tw/ " target="blank ">
-                                <i class="fab fa-spotify fa-lg "></i></a>
+                        <li class="footer-parts">
+                            <a href="https://www.spotify.com/tw/" target="blank">
+                                <i class="fab fa-spotify fa-lg"></i></a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </footer>
-        <script src="../js/app.js " type="module "></script>
+        <script src="../js/app.js" type="module"></script>
 </body>
 
 </html>

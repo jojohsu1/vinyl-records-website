@@ -11,9 +11,10 @@
 
 <body>
     <div class="container">
-        <header class="main-header">
-            <nav class="nav main_nav">
-                <ul>
+        <!--main nav-->
+        <header class="main-header section_display">
+            <nav id="main_nav_panel" class="nav main_nav section_distance">
+                <ul class="navbar_panel">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../new.html">New</a></li>
                     <li><a href="../album.html">Albums</a></li>
@@ -22,29 +23,111 @@
                     <li><a href="../login.html">Sign In</a></li>
                 </ul>
             </nav>
-            <h1 class="header-title">
+            <div class="bars_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1 class="header-title section_distance">
                 Vinyl Records
             </h1>
         </header>
+        <!--breadcrumbs-->
+        <div class="section_breadcrumbs">
+            <nav class="breadcrumbs_nav">
+                <ul>
+                    <li><a href="../album.html" class="nav_items">Albums</a>&nbsp;\&nbsp;<a href="#">Heifetz - Sibelius Violin Concerto in D Minor, Op. 47</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="container-album-grid">
             <div class="section section-title"></div>
+            <!--left side-->
+            <aside class="sidemenu">
+                <div class="album_catagory">
+                    <ul class="album_catagory_ul">
+                        <li class="album_catagory_li">
+                            <div class="sidemenu_icons">
+                                <div class="musical_instrument_icon">
+                                    <img src="../images/icon/piano.svg" alt="piano" class="piano_icon">
+                                </div>
+                                <span class="section-title instrument_name left-distance">piano</span>
+                                <span class="section-plus">+</i></span>
+                            </div>
+                            <div class="sidemenu_albums piano">
+                            </div>
+                        </li>
+                        <li class="album_catagory_li">
+                            <div class="sidemenu_icons">
+                                <div class="musical_instrument_icon">
+                                    <img src="../images/icon/violin.svg" alt="violin" class="violin_icon">
+                                </div>
+                                <span class="section-title instrument_name left-distance">strings</span>
+                                <span class="section-plus">+</span>
+                            </div>
+                            <div class="sidemenu_albums strings">
+                            </div>
+                        </li>
+                        <li class="album_catagory_li">
+                            <div class="sidemenu_icons">
+                                <div class="musical_instrument_icon">
+                                    <img src="../images/icon/command.svg" alt="symphony" class="command_icon">
+                                </div>
+                                <span class="section-title instrument_name left-distance">symphony</span>
+                                <span class="section-plus">+</span>
+                            </div>
+                            <div class="sidemenu_albums symphony">
+                            </div>
+                        </li>
+                        <li class="album_catagory_li">
+                            <div class="sidemenu_icons">
+                                <div class="musical_instrument_icon">
+                                    <img src="../images/icon/microphone.svg" alt="pop" class="pop_icon">
+                                </div>
+                                <span class="section-title instrument_name left-distance">pop song</span>
+                                <span class="section-plus">+</span>
+                            </div>
+                            <div class="sidemenu_albums pop">
+                            </div>
+                        </li>
+                        <li class="album_catagory_li">
+                            <div class="sidemenu_icons">
+                                <div class="musical_instrument_icon">
+                                    <img src="../images/icon/wind-instrument.svg" alt="jazz" class="jazz_icon">
+                                </div>
+                                <span class="section-title instrument_name left-distance">jazz</span>
+                                <span class="section-plus">+</span>
+                            </div>
+                            <div class="sidemenu_albums jazz">
+                                <div class="album_summary">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!--main area-->
             <div class="albums">
                 <div class="album__items grid_container">
                     <div class="album_item">
-                        <img src="../images/steve-johnson-ToF3lD9z2Vk-unsplash.jpg" class="item_img album_img">
+                        <div class="album_bigpic">
+                            <img src="../images/steve-johnson-ToF3lD9z2Vk-unsplash.jpg" class="item_img album_img">
+                        </div>
                     </div>
                     <div class="album album_item_details">
                         <div class="btn-icons">
                             <button class="btn album-preview btn-note" onclick="self.location.href='../new.html'" type="button" data-tooltips="album preview"><i class="fas fa-music"></i></button>
                             <button class="btn wishlist-add btn-love" onclick="self.location.href='../login.html'" type="button" data-tooltips="add to wishlist"><i class="fas fa-heart"></i></button>
                         </div>
+                        <div class="musical_instrument_icon">
+                            <img src="../images/icon/violin.svg" alt="violin" class="violin_icon">
+                        </div>
                         <span class="categories section-title">strings</span>
                         <span class="album_title title">Sibelius Violin Concerto in D Minor, Op. 47</span>
                         <span class="album_performer performer">Heifetz</span>
                         <span class="album_price records-price">NT$ 1500</span>
+                        <button class="btn records-add-width">add to cart</button>
                         <div class="section_btns">
-                            <button class="btn section_btn tracklist_section" onclick="self.location.href='#'" type="button">Tracklist</button>
-                            <button class="btn section_btn details_section" onclick="self.location.href='#'" type="button">Details</button>
+                            <button class="btn section_btn tracklist_section" onclick="self.location.href='#tracklist'" type="button">Tracklist</button>
+                            <button class="btn section_btn details_section" onclick="self.location.href='#details'" type="button">Details</button>
                         </div>
                     </div>
                 </div>
@@ -67,7 +150,7 @@
                 </div>
                 <div class="album_information">
                     <div class="album_tracklist">
-                        <div class="tracklist_title">Tracklist</div>
+                        <div id="tracklist" class="tracklist_title">Tracklist</div>
                         <div class="album_content">
                             <div class="record_side">LP 1</div><br>
                             <div class="record_content">Jean Sibelius</div><br>
@@ -94,7 +177,7 @@
                         </div>
                     </div>
                     <div class="album_format">
-                        <div class="tracklist_title">Details</div>
+                        <div id="details" class="tracklist_title">Details</div>
                         <div class="format_style">
                             <span class="format_title">Duration</span>
                             <span class="format_content">Double LP</span>
@@ -123,6 +206,7 @@
                 </div>
             </div>
         </div>
+        <button id="topbtn"><i class="fas fa-angle-up fa-lg"></i></button>
         <footer class="main-footer">
             <div class="main-footer-container">
                 <h1 class="footer-title">Vinyl Records</h1>
@@ -152,7 +236,7 @@
                 </nav>
             </div>
         </footer>
-        <script src="js/app.js" type="module"></script>
+        <script src="../js/app.js" type="module"></script>
 </body>
 
 </html>

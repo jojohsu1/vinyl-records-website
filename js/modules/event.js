@@ -16,9 +16,8 @@ const SetCountdown = (_ => {
     let eventItemsElem = document.querySelector('.event_items')
     let monthBtns = document.querySelectorAll('.item_parts')
 
-
     const renderCountDown = _ => {
-        const endTime = new Date(2020, 4, 1).getTime()
+        const endTime = new Date(2020, 4, 17).getTime()
         let secLeft = endTime - Date.now();
 
         if (secLeft > 0) {
@@ -51,7 +50,7 @@ const SetCountdown = (_ => {
                 <p class="people_name">${obj.name}</p>
                 <p class="people_profession">${obj.profession}</p>
             </div>
-        </div>      `
+        </div>`
         })
         if (speakersElem) speakersElem.innerHTML = markup
     }
@@ -112,14 +111,11 @@ const SetCountdown = (_ => {
                 let btn = event.target
                 btn.classList.add('month_active')
                 document.querySelector('.month_5').classList.remove('month_active')
-                console.log(monthMayEvents)
                 monthMayEvents.forEach(hideMonthEvents)
                 monthJuneEvents.forEach(showMonthEvents)
-
             }
         })
     }
-
 
     const showEventContent = _ => {
         document.addEventListener('click', event => {

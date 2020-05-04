@@ -18,12 +18,14 @@ const Clickpurchasebtn = (_ => {
         if (overlayElem) overlayElem.classList.remove('active')
     }
 
-    overlayElem.addEventListener('click', _ => {
-        let modals = document.querySelectorAll('.modal.active')
-        modals.forEach(modal => {
-            closeModalEvent(modal)
+    if (overlayElem) {
+        overlayElem.addEventListener('click', _ => {
+            let modals = document.querySelectorAll('.modal.active')
+            modals.forEach(modal => {
+                closeModalEvent(modal)
+            })
         })
-    })
+    }
 
     openModalBtns.forEach(button => {
         button.addEventListener('click', _ => {

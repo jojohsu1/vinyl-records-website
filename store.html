@@ -321,10 +321,15 @@
             <div class="cart-total-item">Total</div>
             <div class="cart-total-price">NT$ 0</div>
         </div>
-        <button class="btn btn-purchase">purchase</button>
+        <button data-modal-target="#modal" class="btn btn-purchase">purchase</button>
     </div>
     </div>
     </div>
+    <div class="modal" id="modal">
+        <button data-close-btn class="modal-close-btn">&times;</button>
+        <div class="modal-text">thank you for your purchase</div>
+    </div>
+    <div id="overlay"></div>
     <div class="spinner_display">
         <div class="spinner">
             <div class="spinner_sector spinner_sector_yellow1"></div>

@@ -113,6 +113,7 @@ const ShopCart = (_ => {
             let input = quantityInputs[i]
             input.addEventListener('change', quantityChanged)
         }
+
     }
 
     const init = _ => {

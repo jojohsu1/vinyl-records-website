@@ -36,8 +36,11 @@ body {
 }
 
 .addedToCart {
+    z-index: 99;
     position: fixed;
-    top: 35%;
+    top: 40%;
+    left: 15%;
+    transform: translate(-50%, -50%);
 }
 
 .animation_icons {
@@ -45,7 +48,7 @@ body {
     width: 280px;
     height: 30px;
     margin: 10rem 0 0 7rem;
-    opacity: 0;
+    opacity: 1;
 }
 
 .animation_icons-active {
@@ -55,11 +58,12 @@ body {
 .added {
     font-family: Space Mono, monospace;
     font-size: 1.1rem;
-    color: var(--dark-gray);
+    color: #F2F2F2;
     line-height: 30px;
     text-align: center;
     padding: 0 1rem;
     opacity: 0;
+    background-color: var(--dark-green);
 }
 
 .added-active {
@@ -240,6 +244,13 @@ body {
 }
 
 @media only screen and (max-width:960px) {
+    .addedToCart {
+        z-index: 99;
+        position: fixed;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
     .main_nav {
         font-size: 1rem;
     }

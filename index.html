@@ -11,106 +11,262 @@
 
 <body>
     <div class="container">
-        <header class="main-header">
-            <nav class="nav main_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="new.html">New</a></li>
-                    <li><a href="album.html">Albums</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="store.html">Shop</a></li>
-                    <li><a href="login.html">Sign In</a></li>
+        <!--main nav-->
+        <header class="main-header section_display">
+            <nav id="main_nav_panel" class="nav main_nav section_distance">
+                <ul class="navbar_panel">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./new.html">New</a></li>
+                    <li><a href="./album.html">Albums</a></li>
+                    <li><a href="./event.html">Event</a></li>
+                    <li><a href="./store.html">Shop</a></li>
+                    <li><a href="./login.html">Sign In</a></li>
                 </ul>
             </nav>
-            <h1 class="header-title">
+            <div class="bars_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1 class="header-title section_distance">
                 Vinyl Records
             </h1>
         </header>
-        <div class="grid_container">
-            <div class="grid_item grid_item_1 banner_img1">
-                <a href="store.html" target="_self">
-                    <div class="banner_item">
-                        <div class="banner_details">
-
-                            <span class="section-title">PIANO</span>
-                            <br>
-                            <span class="item_title">Ravel: Miroirs-Alborada del gracioso</span>
-                        </div>
+        <div class="container_slide">
+            <div class="slide_items banner-active">
+                <div class="slide_banner">
+                    <div class="slide_img">
+                        <img src="./images/vinyl-3156858.jpg" alt="">
                     </div>
-                </a>
+                    <div class="slide_text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>    
+                </div>
             </div>
-            <div class="grid_item grid_item_2 ">
-                <a href="new.html" target="_self">
-                    <div class="banner_item itemsmall">
-                        <div class="banner_details banner_img2-1">
-                            <span class="section-title item_new">New</span>
-                            <br>
-                            <span class="item_performer performer">Heifetz</span>
-                        </div>
+            <div class="slide_items">
+                <div class="slide_banner">
+                    <div class="slide_img">
+                        <img src="./images/black-vinyl-record-on-vinyl-record-player-3959994.jpg" alt="">
                     </div>
-                </a>
-                <a href="new.html" target="_self">
-                    <div class="banner_item itemsmall">
-                        <div class="banner_details banner_img2-2">
-                            <span class="section-title item_new">New</span>
-                            <br>
-                            <span class="item_performer performer">Abbado · Berliner Philharmoniker</span>
-                        </div>
-                    </div>
-                </a>
+                        <div class="slide_text">
+                        Excepturi in, ducimus aut dolor quaerat provident? Labore, quos quia.
+                    </div>    
+                </div>
             </div>
-            <div class="grid_item grid_item_3 banner_img3">
-                <a href="event.html" target="_self">
-                    <div class="banner_item">
-                        <div class="banner_details">
-                            <span class="section-title special_title">COMING SOON</span>
-                            <br>
-                            <span class="item_title">Summer Festivals<br>Fascinating Lecture</span>
-                        </div>
+            <div class="slide_items">
+                <div class="slide_banner">
+                    <div class="slide_img">
+                        <img src="./images/dmitry-bayer-AtIt4iCvP94-unsplash.jpg" alt="">
                     </div>
-                </a>
+                    <div class="slide_text">
+                        Vero, porro consectetur quos sequi sapiente provident in modi itaque reprehenderit obcaecati.
+                    </div>    
+                    </div>
             </div>
-            <div class="grid_item grid_item_4 banner_img4">
-                <a href="store.html" target="_self">
-                    <div class="banner_item">
-                        <div class="banner_details">
-                            <span class="section-title">STRINGS</span>
-                            <br>
-                            <span class="item_title">The Flight Of The Bumble-Bee</span>
-                        </div>
+            <div class="slide_items">
+                <div class="slide_banner">
+                    <div class="slide_img">
+                        <img src="./images/jon-tyson-H1QqPZ-WZdQ-unsplash.jpg" alt="">
                     </div>
-                </a>
+                    <div class="slide_text">
+                        Tenetur iusto vel, rerum libero ab qui.
+                    </div>    
+                </div>
+            </div>
+            <div class="dots_area">
+                <span class="dot dot-active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="direction_area">
+                <a class="previous">&#10094;</a>
+                <a class="next">&#10095;</a>
             </div>
         </div>
+        <div class="sample_section">
+        <div class="section section-title">ALBUMS</div>
+        <div class="container_albums">
+            <div class="grid_item grid_item_1">
+                <div class="banner_item banner_img1">
+                    <div class="banner_details">
+                        <span class="section-title">PIANO</span>
+                        <br>
+                        <span class="item_title">Ravel: Miroirs-Alborada del gracioso</span>
+                    </div>
+                </div>
+                <div class="banner-under1 banner_item banner_img1-1">
+                    <div class="banner_details">
+                        <span class="section-title">PIANO</span>
+                        <br>
+                        <span class="item_title">Chopin: Nocturnes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_item grid_item_2">
+                <div class="banner_item banner_img2">
+                    <div class="banner_details">
+                        <span class="section-title">STRINGS</span>
+                        <br>
+                        <span class="item_title">The Flight Of The Bumble-Bee</span>
+                    </div>
+                 </div>
+                <div class="banner-under2 banner_item banner_img2-1">
+                    <div class="banner_details">
+                        <span class="section-title">STRINGS</span>
+                        <br>
+                        <span class="item_title">Vivaldi：The Four Seasons</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_item grid_item_3">
+                <div class="banner_item">
+                    <div class="banner_details banner_img3">
+                        <span class="section-title">POP</span>
+                        <br>
+                        <span class="item_title">Close to You</span>
+                    </div>
+                </div>
+                <div class="banner-under3 banner_item banner_img3-1">
+                    <div class="banner_details">
+                        <span class="section-title">POP</span>
+                        <br>
+                        <span class="item_title">PERSONA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_item grid_item_4">  
+                <div class="banner_item">
+                    <div class="banner_details banner_img4">
+                        <span class="section-title">SYMPHONY</span>
+                        <br>
+                        <span class="item_title">Dvorak Symphony No. 9 <br>From The New World</span>
+                    </div>
+                </div>
+                <div class="banner-under4 banner_item banner_img4-1">
+                    <div class="banner_details">
+                        <span class="section-title">JAZZ</span>
+                        <br>
+                        <span class="item_title">Et cetera</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_more">
+            <button class="btn btn-yellow" onclick="self.location.href='./album.html'" type="button">more</button>
+        </div>
+    </div>
+    <div class="event_section">
+        <div class="section section-title">EVENTS</div>
+            <div class="event_display event-img">
+                <div class="substandard">upcoming events</div>
+                <div class="season_title">summer lecture</div>
+                <div class="event_project">
+                    <div class="event_speaker speaker1">
+                        <span class="event_name">Eva Smith</span>
+                        <div class="event_text"> 
+                            <div class="event_date">July 18</div>
+                            <span class="event_theme">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                    <div class="event_speaker speaker2">
+                        <span class="event_name">Emma Wilson</span>
+                        <div class="event_text">
+                            <div class="event_date">July 26</div>
+                            <span class="event_theme">Aliquid minima ipsam ducimus id!</span>
+                        </div>
+                    </div>
+                    <div class="event_speaker speaker3">
+                        <span class="event_name">Peter Smith</span>
+                        <div class="event_text">
+                            <div class="event_date">August 23</div>
+                            <span class="event_theme">Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                    <div class="event_speaker speaker4">
+                        <span class="event_name">Benjamin Brown</span>
+                        <div class="event_text">
+                            <div class="event_date">August 29</div>
+                            <span class="event_theme">Lorem, ipsum dolor sit amet ...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section_more">
+                <button class="btn btn-yellow" onclick="self.location.href='./event.html'" type="button">more</button>
+                </div>
+            </div>
+            </div>      
+    </div>
+    <div class="gift_section">
         <div class="section section-title">GIFTS</div>
-        <div class="grid_container">
-            <div class="gift_items gift">
+        <div class="container_gift">
+            <div class="gift_items">
                 <div class="gift_item">
                     <div class="gift_details gift_img1">
-                        <span class="gift_text1">vinyl & audio products</span>
+                        <div class="gift">
+                        <span class="gift-title">vinyl & audio products</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="gift_items">
                 <div class="gift_item">
                     <div class="gift_details gift_img2">
+                        <div class="gift">
                         <span class="gift-title">vintage albums</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="gift_items gift">
+            <div class="gift_items">
                 <div class="gift_item">
                     <div class="gift_details gift_img3">
+                        <div class="gift">
                         <span class="gift-title">coffee & music</span>
+                        </div>
                     </div>
-                </div>
+                </div>   
+            </div>
+            <div class="gift_items">
                 <div class="gift_item">
                     <div class="gift_details gift_img4">
-                        <span class="gift_text4">travel & music<br><span class="textsmall">music is good for the soul,too</span></span>
+                        <div class="gift">
+                        <span class="gift-title">travel & music</span>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="gift_items">
+                <div class="gift_item">
+                    <div class="gift_details gift_img5">
+                        <div class="gift">
+                        <span class="gift-title">book & music</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section section-title"></div>
-        <footer class="main-footer">
+            <div class="gift_items">
+                <div class="gift_item">
+                    <div class="gift_details gift_img6">
+                        <div class="gift">
+                        <span class="gift-title">life & music</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="announce-title">COMING SOOM</span>
+        </div>    
+    </div>
+    <div class="spinner_display">
+            <div class="spinner">
+                <div class="spinner_sector spinner_sector_yellow1"></div>
+                <div class="spinner_sector spinner_sector_yellow2"></div>
+                <div class="spinner_sector spinner_sector_yellow3"></div>
+                <div class="spinnerz_circle"></div>
+                <div class="spinner_ceneter"></div>
+                <div class="spinnerz_text"></div>
+            </div>
+    </div>
+    <button id="topbtn"><i class="fas fa-angle-up fa-lg"></i></button>
+    <footer class="main-footer">
             <div class="main-footer-container">
                 <h1 class="footer-title">Vinyl Records</h1>
                 <nav class="nav footer-nav">
@@ -138,8 +294,8 @@
                     </ul>
                 </nav>
             </div>
-        </footer>
-        <script src="js/app.js" type="module"></script>
+    </footer>
+    <script src="./js/app.js" type="module"></script>
 </body>
 
 </html>

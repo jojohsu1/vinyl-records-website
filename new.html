@@ -11,29 +11,36 @@
 
 <body>
     <div class="container">
-        <header class="main-header">
-            <nav class="nav main_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="new.html">New</a></li>
-                    <li><a href="album.html">Albums</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="store.html">Shop</a></li>
-                    <li><a href="login.html">Sign In</a></li>
+        <!--main nav-->
+        <header class="main-header section_display">
+            <nav id="main_nav_panel" class="nav main_nav section_distance">
+                <ul class="navbar_panel">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./new.html">New</a></li>
+                    <li><a href="./album.html">Albums</a></li>
+                    <li><a href="./event.html">Event</a></li>
+                    <li><a href="./store.html">Shop</a></li>
+                    <li><a href="./login.html">Sign In</a></li>
                 </ul>
             </nav>
-            <h1 class="header-title">
+            <div class="bars_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1 class="header-title section_distance">
                 Vinyl Records
             </h1>
         </header>
-        <div class="container-album-grid">
+        <div class="container-new container-album-grid">
             <div class="track_bar">
                 <div class="track_bar_fill"></div>
             </div>
-            <div class="section section-title">NEW</div>
-            <div class="new_records">
+                <div class="section_new">
+                    <div class="section section-title">NEW</div>
+                <div class="new_records">
+            </div>
             </div>
         </div>
+        <button id="topbtn"><i class="fas fa-angle-up fa-lg"></i></button>
         <footer class="main-footer">
             <div class="main-footer-container">
                 <h1 class="footer-title">Vinyl Records</h1>

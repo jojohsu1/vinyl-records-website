@@ -44,13 +44,14 @@ const Newinfo = (_ => {
             markup += `
             <div class="new__items">
                 <div class="new_item">
+                <div class="new_img">
                     <img src="${obj.img}" class="item_img">
-                    <button class="btn btn-play-pause">${toggleBtnName(index)}</button>
-                    </img>
-                    <div class="new_item_details">
-                        <span class="new_performer performer">${obj.artist}</span>
-                        <span class="new_title title">${obj.title}</span>
-                        <button class="btn btn-more" onclick="self.location.href='./albums/${obj.link}'" type="button">more</button>
+                    <button class="btn btn-play-pause ">${toggleBtnName(index)}</button>
+                </div>
+                <div class="new_item_details">
+                    <span class="new_performer performer">${obj.artist}</span>
+                    <span class="new_title title">${obj.title}</span>
+                    <button class="btn btn-more" onclick="self.location.href='./albums/${obj.link}'" type="button">more</button>
                     </div>
                 </div>
             </div>
@@ -64,10 +65,12 @@ const Newinfo = (_ => {
         document.addEventListener('click', event => {
             if (event.target && event.target.matches('.btn-play-pause')) {
                 let btn = event.target
-                let item = btn.parentElement.parentElement
+                console.log(btn)
+                let item = btn.parentElement.parentElement.parentElement
                 let itemElem = item.parentElement
+                console.log(itemElem)
                 let itemIndex = [...itemElem.children].indexOf(item)
-
+                console.log(itemIndex)
                 mainPlay(itemIndex)
                 render()
             }

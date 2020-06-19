@@ -16,9 +16,8 @@ const SetCountdown = (_ => {
     let eventItemsElem = document.querySelector('.event_items')
     let monthBtns = document.querySelectorAll('.item_parts')
 
-
     const renderCountDown = _ => {
-        const endTime = new Date(2020, 4, 1).getTime()
+        const endTime = new Date(2020, 6, 18).getTime()
         let secLeft = endTime - Date.now();
 
         if (secLeft > 0) {
@@ -51,7 +50,7 @@ const SetCountdown = (_ => {
                 <p class="people_name">${obj.name}</p>
                 <p class="people_profession">${obj.profession}</p>
             </div>
-        </div>      `
+        </div>`
         })
         if (speakersElem) speakersElem.innerHTML = markup
     }
@@ -100,26 +99,23 @@ const SetCountdown = (_ => {
 
     const showMonthEvent = _ => {
         document.addEventListener('click', event => {
-            let monthMayEvents = document.querySelectorAll('.May')
-            let monthJuneEvents = document.querySelectorAll('.June')
-            if (event.target && event.target.matches('.month_5')) {
+            let monthJulyEvents = document.querySelectorAll('.July')
+            let monthAugustEvents = document.querySelectorAll('.August')
+            if (event.target && event.target.matches('.month_7')) {
                 let btn = event.target
                 btn.classList.add('month_active')
-                document.querySelector('.month_6').classList.remove('month_active')
-                monthMayEvents.forEach(showMonthEvents)
-                monthJuneEvents.forEach(hideMonthEvents)
-            } else if (event.target && event.target.matches('.month_6')) {
+                document.querySelector('.month_8').classList.remove('month_active')
+                monthJulyEvents.forEach(showMonthEvents)
+                monthAugustEvents.forEach(hideMonthEvents)
+            } else if (event.target && event.target.matches('.month_8')) {
                 let btn = event.target
                 btn.classList.add('month_active')
-                document.querySelector('.month_5').classList.remove('month_active')
-                console.log(monthMayEvents)
-                monthMayEvents.forEach(hideMonthEvents)
-                monthJuneEvents.forEach(showMonthEvents)
-
+                document.querySelector('.month_7').classList.remove('month_active')
+                monthJulyEvents.forEach(hideMonthEvents)
+                monthAugustEvents.forEach(showMonthEvents)
             }
         })
     }
-
 
     const showEventContent = _ => {
         document.addEventListener('click', event => {

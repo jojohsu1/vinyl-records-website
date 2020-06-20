@@ -11,28 +11,85 @@
 
 <body>
     <div class="container">
-        <header class="main-header">
-            <nav class="nav main_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="new.html">New</a></li>
-                    <li><a href="album.html">Albums</a></li>
-                    <li><a href="event.html">Event</a></li>
-                    <li><a href="store.html">Shop</a></li>
-                    <li><a href="login.html">Sign In</a></li>
+        <!--main nav-->
+        <header class="main-header section_display">
+            <nav id="main_nav_panel" class="nav main_nav section_distance">
+                <ul class="navbar_panel">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../new.html">New</a></li>
+                    <li><a href="../album.html">Albums</a></li>
+                    <li><a href="../event.html">Event</a></li>
+                    <li><a href="../store.html">Shop</a></li>
+                    <li><a href="../login.html">Sign In</a></li>
                 </ul>
             </nav>
-            <h1 class="header-title">
+            <div class="bars_icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h1 class="header-title section_distance">
                 Vinyl Records
             </h1>
         </header>
-
+        <div class="section section-title">ALBUMS</div>
+        <nav class="category_items">
+            <ul class="category_ul">
+                <li class="category_li">
+                    <div class="category_item">
+                        <div class="musical_instrument_icon icon_display ">
+                            <img src="../images/icon/piano.svg" alt="piano" class="piano_icon instrument_piano instrument_icon">
+                        </div>
+                        <div class="icon_title">
+                            <span class="section-title instrument_name instrument-piano instrument-active">piano</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="category_li">
+                    <div class="category_item">
+                        <div class="musical_instrument_icon icon_display">
+                            <img src="../images/icon/violin.svg" alt="violin" class="violin_icon instrument_string instrument_icon">
+                        </div>
+                        <div class="icon_title">
+                            <span class="section-title instrument_name">violin</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="category_li">
+                    <div class="category_item">
+                        <div class="musical_instrument_icon icon_display">
+                            <img src="../images/icon/command.svg" alt="symphony" class="command_icon instrument_symphony instrument_icon">
+                        </div>
+                        <div class="icon_title">
+                            <span class="section-title instrument_name">symphony</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="category_li">
+                    <div class="category_item">
+                        <div class="musical_instrument_icon icon_display">
+                            <img src="../images/icon/microphone.svg" alt="pop" class="pop_icon instrument_pop instrument_icon">
+                        </div>
+                        <div class="icon_title">
+                            <span class="section-title instrument_name">pop song</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="category_li">
+                    <div class="category_item">
+                        <div class="musical_instrument_icon icon_display">
+                            <img src="../images/icon/wind-instrument.svg" alt="jazz" class="jazz_icon instrument_jazz instrument_icon">
+                        </div>
+                        <div class="icon_title">
+                            <span class="section-title instrument_name">jazz</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         <div class="album__items container-grid">
-            <div class="section section-title">ALBUMS</div>
-            <div class="album_section grid-container">
+            <div class="album_section piano_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/jake-noren-xwEbGBA-hdk-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/jake-noren-xwEbGBA-hdk-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -43,14 +100,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Bach : Toccata in C Minor, Partita No. 2, English Suite No. 2</span>
-                    <span class="album_performer performer">Martha Argerich</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Martha Argerich</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/argerich_bach.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section piano_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/priscilla-du-preez-XZEYdvJznMQ-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -61,14 +118,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Ravel: Miroirs-Alborada del gracioso</span>
-                    <span class="album_performer performer">Lorem ipsum dolor</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Lorem ipsum dolor</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/lorem_ravel.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section piano_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/nathan-anderson-AU06xTIT8xw-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/nathan-anderson-AU06xTIT8xw-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -79,14 +136,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Chopin: Nocturnes</span>
-                    <span class="album_performer performer">Arthur Rubinstein</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Arthur Rubinstein</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/rubinstein_chopin.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section piano_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/jeremy-bishop-1braZySlEKA-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/jeremy-bishop-1braZySlEKA-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -94,17 +151,17 @@
                         <div class="musical_instrument_icon">
                             <img src="./images/icon/piano.svg" alt="piano" class="piano_icon">
                         </div>
-                        <span class="new">New</span>
+                        <span class="new"><a href="new.html" target="_self">New</a></span>
                     </div>
                     <span class="album_title title title-space">Beethoven Piano Sonata No.14 Moonlight Sonata</span>
-                    <span class="album_performer performer">Daniel Barenboim</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Daniel Barenboim</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/barenboim_beethoven.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/alireza-nazari-a8lSSWjK7PQ-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/alireza-nazari-a8lSSWjK7PQ-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -115,14 +172,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Pablo De Sarasate: Zigeunerweisen</span>
-                    <span class="album_performer performer">Amet consectetur</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Amet consectetur</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/amet_sarasate.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/kael-bloom-TYcgGyD5580-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/kael-bloom-TYcgGyD5580-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -133,14 +190,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">The Flight Of The Bumble-Bee</span>
-                    <span class="album_performer performer">Yo-Yo Ma</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Yo-Yo Ma</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/yo-yo_ma_bumble-Bee.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/viktor-jakovlev-mtNweauBsMQ-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/viktor-jakovlev-mtNweauBsMQ-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -151,14 +208,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Bach: Unaccompanied Cello Suites</span>
-                    <span class="album_performer performer">Pierre Fournier</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Pierre Fournier</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/fournier_bach.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/johan-anblick-EWEI69jpVx8-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/johan-anblick-EWEI69jpVx8-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -169,14 +226,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Vivaldi：The Four Seasons</span>
-                    <span class="album_performer performer">Tatiyana nulla rerum</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Tatiyana nulla rerum</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/tatiyana_vivaldi.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/steve-johnson-0j9u-ItaGxM-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/steve-johnson-0j9u-ItaGxM-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -187,14 +244,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Tchaikovsky Violin Concerto in D major, Op. 35</span>
-                    <span class="album_performer performer">Yu-Chien Tseng</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Yu-Chien Tseng</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/benny_tseng_tchaikovsky.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/joel-wyncott-WYiIkQFclA4-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/joel-wyncott-WYiIkQFclA4-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -205,14 +262,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Sibelius Violin Concerto in D Minor, Op. 47</span>
-                    <span class="album_performer performer">Yu-Chien Tseng</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Yu-Chien Tseng</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/benny_tseng_sibelius.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/steve-johnson-ToF3lD9z2Vk-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/steve-johnson-ToF3lD9z2Vk-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -220,17 +277,17 @@
                         <div class="musical_instrument_icon">
                             <img src="./images/icon/violin.svg" alt="violin" class="violin_icon">
                         </div>
-                        <span class="new">New</span>
+                        <span class="new"><a href="new.html" target="_self">New</a></span>
                     </div>
                     <span class="album_title title title-space">Sibelius Violin Concerto in D Minor, Op. 47</span>
-                    <span class="album_performer performer">Heifetz</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Heifetz</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/heifetz_sibelius.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section strings_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/julio-rionaldo-xIoze9dH4WI-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/julio-rionaldo-xIoze9dH4WI-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -238,17 +295,17 @@
                         <div class="musical_instrument_icon">
                             <img src="./images/icon/violin.svg" alt="violin" class="violin_icon">
                         </div>
-                        <span class="new">New</span>
+                        <span class="new"><a href="new.html" target="_self">New</a></span>
                     </div>
                     <span class="album_title title title-space">Pablo De Sarasate - Carmen Fantasy Op. 25</span>
-                    <span class="album_performer performer">Itzhak Perlman</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Itzhak Perlman</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/perlman_sarasate.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section symphony_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/toa-heftiba-jwraMZtxBHs-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/toa-heftiba-jwraMZtxBHs-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -256,18 +313,18 @@
                         <div class="musical_instrument_icon">
                             <img src="./images/icon/command.svg" alt="symphony" class="command_icon">
                         </div>
-                        <span class="new">New</span>
+                        <span class="new"><a href="new.html" target="_self">New</a></span>
                     </div>
                     <span class="album_title title title-space">Dvorak Symphony No. 9 From The New World</span>
-                    <span class="album_performer performer">Abbado · Berliner Philharmoniker</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Abbado · Berliner Philharmoniker</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/abbado_berliner_dvorak.html'" type="button">more</button>
 
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section pop_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/nick-karvounis-tp_aLk0ngME-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/nick-karvounis-tp_aLk0ngME-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -278,14 +335,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Close to You</span>
-                    <span class="album_performer performer">Lopsum dolor</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Lopsum dolor</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/lopsum_close-to-You.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section pop_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/blake-guidry-9wWMLO0JqHQ-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/blake-guidry-9wWMLO0JqHQ-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -296,14 +353,14 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">PERSONA</span>
-                    <span class="album_performer performer">Adipisicing aliquid</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Adipisicing aliquid</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/adipisicing_PERSONA.html'" type="button">more</button>
                 </div>
             </div>
-            <div class="album_section grid-container">
+            <div class="album_section jazz_category">
                 <div class="albums_items">
                     <div class="album_pic">
-                        <img src="../images/jorge-zapata-ajLlK5qL6Ic-unsplash.jpg" class="item_img album_img">
+                        <img src="../images/jorge-zapata-ajLlK5qL6Ic-unsplash.jpg" class="album_img">
                     </div>
                 </div>
                 <div class="album_index album_item_details">
@@ -314,13 +371,24 @@
                         <span class="new"></span>
                     </div>
                     <span class="album_title title title-space">Et cetera</span>
-                    <span class="album_performer performer">Ullam libero</span>
-                    <button class="btn btn-more center-more">more</button>
+                    <span class="album_performer performer down_layout">Ullam libero</span>
+                    <button class="btn btn-more center-more" onclick="self.location.href='../albums/ullam_et-cetera.html'" type="button">more</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <div class="spinner_display">
+        <div class="spinner">
+            <div class="spinner_sector spinner_sector_yellow1"></div>
+            <div class="spinner_sector spinner_sector_yellow2"></div>
+            <div class="spinner_sector spinner_sector_yellow3"></div>
+            <div class="spinnerz_circle"></div>
+            <div class="spinner_ceneter"></div>
+            <div class="spinnerz_text"></div>
+        </div>
+    </div>
+    <button id="topbtn"><i class="fas fa-angle-up fa-lg"></i></button>
     <footer class="main-footer">
         <div class="main-footer-container">
             <h1 class="footer-title">Vinyl Records</h1>

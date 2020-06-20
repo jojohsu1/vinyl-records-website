@@ -3,7 +3,7 @@ const Rotatespinner = (_ => {
     let spinnerElem = document.querySelector('.spinner_display')
 
     const rotateSpinnerEvent = _ => {
-        spinnerElem.style.display = 'none'
+        if(spinnerElem) spinnerElem.style.display = 'none'
     }
 
     const listener = _ => {

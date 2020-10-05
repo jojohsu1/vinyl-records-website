@@ -17,7 +17,7 @@ const SetCountdown = (_ => {
     let monthBtns = document.querySelectorAll('.item_parts')
 
     const renderCountDown = _ => {
-        const endTime = new Date(2020, 6, 18).getTime()
+        const endTime = new Date(2020, 10, 22).getTime()
         let secLeft = endTime - Date.now();
 
         if (secLeft > 0) {
@@ -99,18 +99,18 @@ const SetCountdown = (_ => {
 
     const showMonthEvent = _ => {
         document.addEventListener('click', event => {
-            let monthJulyEvents = document.querySelectorAll('.July')
-            let monthAugustEvents = document.querySelectorAll('.August')
-            if (event.target && event.target.matches('.month_7')) {
+            let monthJulyEvents = document.querySelectorAll('.November')
+            let monthAugustEvents = document.querySelectorAll('.December')
+            if (event.target && event.target.matches('.month_11')) {
                 let btn = event.target
                 btn.classList.add('month_active')
-                document.querySelector('.month_8').classList.remove('month_active')
+                document.querySelector('.month_12').classList.remove('month_active')
                 monthJulyEvents.forEach(showMonthEvents)
                 monthAugustEvents.forEach(hideMonthEvents)
-            } else if (event.target && event.target.matches('.month_8')) {
+            } else if (event.target && event.target.matches('.month_12')) {
                 let btn = event.target
                 btn.classList.add('month_active')
-                document.querySelector('.month_7').classList.remove('month_active')
+                document.querySelector('.month_11').classList.remove('month_active')
                 monthJulyEvents.forEach(hideMonthEvents)
                 monthAugustEvents.forEach(showMonthEvents)
             }

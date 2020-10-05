@@ -805,6 +805,7 @@ body {
     background-color: var(--dark-gray);
     cursor: pointer;
 }
+
 /* index */
 .container_slide{
     position: relative;
@@ -818,18 +819,14 @@ body {
     height: 300px;
     opacity: 0;
 }
-
 .slide_banner{
     position: relative;
     width: 100%;
-    height: 300px;
-    
+    height: 300px;  
 }
-
 .banner-active{
     opacity: 1;
 }
-
 .slide_img{
     position: absolute;
     top: 0;
@@ -837,7 +834,6 @@ body {
     width: 100%;
     height: auto;
 }
-
 .slide_text{
     position: absolute;
     top: 50%;
@@ -850,7 +846,6 @@ body {
     letter-spacing: .1rem;
     text-align: center;
 }
-
 .dots_area{
     position: absolute;
     bottom: 0;
@@ -1821,7 +1816,7 @@ body {
     background-color: #fff;
 }
 
-.August {
+.December {
     display: none;
 }
 

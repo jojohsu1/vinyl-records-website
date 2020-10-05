@@ -5,8 +5,8 @@ export const peopleList = [{
     "img3": "../../images/white-and-red-keyboard-3591232.jpg",
     "title": "Lorem ipsum dolor sit amet.",
     "cost": "Free",
-    "month": "July",
-    "date": "July 18, 20:00",
+    "month": "November",
+    "date": "November 22, 20:00",
     "name": "Eva Smith",
     "profession": "MusicBox Founder"
   },
@@ -17,8 +17,8 @@ export const peopleList = [{
     "img3": "../../images/haley-lawrence-A3Ndh9ww0hU-unsplash.jpg",
     "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     "cost": "NT$500",
-    "month": "July",
-    "date": "July 25, 14:00",
+    "month": "November",
+    "date": "November 28, 14:00",
     "name": "Michelle Lee",
     "profession": "Presenter, DJ"
 
@@ -30,8 +30,8 @@ export const peopleList = [{
     "img3": "../../images/bannon-morrissy-z1p11xDtNKo-unsplash.jpg",
     "title": "Aliquid minima ipsam ducimus id! Aliquid, maxime!",
     "cost": "NT$350",
-    "month": "July",
-    "date": "July 26, 14:00",
+    "month": "November",
+    "date": "November 29, 14:00",
     "name": "Emma Wilson",
     "profession": "Presenter, Artist"
   },
@@ -42,8 +42,8 @@ export const peopleList = [{
     "img3": "../../images/vinyl-record-in-vinyl-player-on-table-1958841.jpg",
     "title": "Lorem ipsum dolor sit amet.",
     "cost": "NT$450",
-    "month": "August",
-    "date": "August 23, 14:00",
+    "month": "December",
+    "date": "December 20, 14:00",
     "name": "Peter Smith",
     "profession": "DJ, Director"
   },
@@ -54,8 +54,8 @@ export const peopleList = [{
     "img3": "../../images/black-camera-2873486.jpg",
     "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
     "cost": "NT$500",
-    "month": "August",
-    "date": "August 29, 20:00",
+    "month": "December",
+    "date": "December 26, 20:00",
     "name": "Benjamin Brown",
     "profession": "Presenter, Music Producer"
   },
@@ -66,8 +66,8 @@ export const peopleList = [{
     "img3": "../../images/silver-colored-microphone-675960.jpg",
     "title": "rhythm, melody, form - Basic elements of Western classical music",
     "cost": "NT$400",
-    "month": "August",
-    "date": "August 30, 14:00",
+    "month": "December",
+    "date": "December 27, 14:00",
     "name": "William Wright",
     "profession": "Music Producer"
   }
